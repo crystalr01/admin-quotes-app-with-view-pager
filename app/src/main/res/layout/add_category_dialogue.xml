@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white"
+    android:padding="10dp"
+    android:elevation="10dp"
+    android:background="@drawable/rounded_box"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        app:riv_border_width="2dp"
+        app:riv_border_color="@color/gray"
+        android:src="@drawable/baseline_image_24"
+        android:scaleType="centerCrop"
+        android:id="@+id/image"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        app:riv_corner_radius="90dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap above to select image"
+        android:gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editCategoryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_back"
+        android:backgroundTint="@color/white"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="Enter category name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Category"
+        android:elevation="5dp"
+        android:background="@drawable/round_back"
+        android:layout_gravity="center"
+        android:id="@+id/addCategoryButton"/>
+
+</LinearLayout>

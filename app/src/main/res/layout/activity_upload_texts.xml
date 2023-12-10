@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/light_white"
+    tools:context=".UploadTextsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paste or write texts"
+            android:background="@drawable/back_round"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        android:background="@drawable/back_round"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter texts here..."
+            android:textColor="@color/black"
+            android:id="@+id/uploadTexts"
+            android:background="@drawable/back_round"
+            android:padding="10dp"
+            android:elevation="10dp"
+            android:layout_margin="10dp"/>
+
+
+        <!--    <com.google.android.material.textfield.TextInputEditText-->
+        <!--        android:id="@+id/categoryName"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_margin="16dp"-->
+        <!--        android:background="@drawable/round_back"-->
+        <!--        android:backgroundTint="@color/white"-->
+        <!--        android:elevation="5dp"-->
+        <!--        android:ems="10"-->
+        <!--        android:hint="Enter category name"-->
+        <!--        android:inputType="textPersonName"-->
+        <!--        android:minHeight="48dp"-->
+        <!--        android:padding="10dp" />-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Texts"
+            android:elevation="10dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/back_round"
+            android:layout_gravity="center"
+            android:id="@+id/uploadTextsButton"/>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
